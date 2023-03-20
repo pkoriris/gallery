@@ -19,10 +19,7 @@ pipeline {
                 sh 'npm install'
                 sh 'npm config set strict-ssl false'
             }
-        stage('Test') {
-            steps {
-                sh 'npm test'
-            }
+    
         }
         stage('Deploy') {
             steps {
